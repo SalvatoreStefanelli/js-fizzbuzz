@@ -5,18 +5,22 @@
 
 // Ciclo For
 for (let i = 1; i <= 100; i++) {
-    console.log(i);
+    //console.log(i);
 
-
+    // Stampo FizzBuzz per i multipli di 3 e di 5
+    if (i % 15 == 0) {
+        console.log('FizzBuzz');
+        
     // Stampo Fizz per i multipli di 3   
-    if (i % 3 == 0) {
-        console.log('Fizz');
+    } else if (i % 3 == 0) {
+        console.log('Fizz');  
     
     // Stampo Buzz per i multipli di 5
     } else if (i % 5 == 0) {
         console.log('Buzz');
+    
+    // Stampo tutti gli altri numeri 
+    } else {
+        console.log(i);
     }
-
-
-// Stampo FizzBuzz per i multipli di 3 e di 5
 }
