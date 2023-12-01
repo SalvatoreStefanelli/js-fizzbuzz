@@ -16,24 +16,28 @@ for (let i = 1; i <= 100; i++) {
     // Creo un nuovo Tag all'interno dell'HTML 
     let listMarkUp = `<li class="box"> ${i} </li>`;
     const liElement = document.createElement('li');
-
+    
     // Appendo il nuovo Tag creato nella pagina HTML
     //liElement.append(i);
     ulElement.append(liElement);
-
+    
+    
     // Stampo FizzBuzz per i multipli di 3 e di 5
     if (i % 15 == 0) {
         console.log('FizzBuzz');
+        liElement.className = 'fizzbuzz';
         liElement.append('FizzBuzz');
         
     // Stampo Fizz per i multipli di 3   
     } else if (i % 3 == 0) {
         console.log('Fizz'); 
+        liElement.className = 'fizz';
         liElement.append('Fizz');
 
     // Stampo Buzz per i multipli di 5
     } else if (i % 5 == 0) {
         console.log('Buzz');
+        liElement.className = 'buzz';
         liElement.append('Buzz');
     
     // Stampo tutti gli altri numeri 

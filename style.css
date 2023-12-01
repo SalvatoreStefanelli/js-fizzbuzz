@@ -1,0 +1,33 @@
+body {
+    background-color: blue;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+li {
+    width: calc(100% / 10 - 0.5rem);
+    aspect-ratio: 1;
+    background-color: green;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fizzbuzz {
+    background-color: yellow;
+}
+
+.fizz {
+    background-color: pink;
+}
+
+.buzz {
+    background-color: saddlebrown;
+}
+
