@@ -3,9 +3,16 @@
 //per i multipli di 5 stampi “Buzz”.
 //Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
+
+const ulElement = document.querySelector('ul');
+
 // Ciclo For
 for (let i = 1; i <= 100; i++) {
     //console.log(i);
+    let listMarkUp = `<li class="box"> ${i} </li>`;
+    const liElement = document.createElement('li');
+    liElement.append(i);
+    ulElement.append(liElement);
 
     // Stampo FizzBuzz per i multipli di 3 e di 5
     if (i % 15 == 0) {
